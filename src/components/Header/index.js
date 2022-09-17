@@ -5,15 +5,15 @@ function Header(props) {
     const { currentTab, setCurrentTab } = props;
 
     return (
-        <header>
+        <header className="header">
             <div>
                 <h2>Michael Atwood</h2>
             </div>
             <div>
-                <Nav>
+                <Nav
                     currentTab={currentTab}
                     setCurrentTab={setCurrentTab}
-                </Nav>
+                ></Nav>
             </div>
         </header>
     );

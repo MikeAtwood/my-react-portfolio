@@ -54,10 +54,18 @@ function Project() {
         
     ]
     return (
-        <section>
-            <h2>Project Section</h2>
-        </section>
-    );
-}
+        <div className='portfolio-container'>
+          <div className='portfolio'>
+            {projects.map((project, i) => (
+              <div className='project' key={project.key}>
+                <h2>{project.title}</h2><br/>
+                <a href={project.github}>GitHub</a>
+              </div>
+            ))}
+          </div>
+    
+        </div>
+      )
+    }
 
 export default Project;
