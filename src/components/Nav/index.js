@@ -1,10 +1,9 @@
-import React, {useEffect } from "react";
+import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
   const categories = ["about", "portfolio", "contact", "resume"];
    return (
-    <header>
       <nav>
         <ul className="flex-row">
           {categories.map((category) => (
@@ -16,7 +15,6 @@ function Nav(props) {
           ))}
         </ul>
      </nav>
-    </header>
   );
 }
 
