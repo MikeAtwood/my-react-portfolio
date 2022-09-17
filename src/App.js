@@ -1,14 +1,15 @@
 import React from 'react';
+
 import Nav from './components/Nav';
 import About from './components/About';
-
+import Header from './components/Header';
 function App() {
 
   return (
     <div>
-      <Nav />
+      <Header></Header>
       <main>
-          <About />        
+          <About></About>       
       </main>
     </div>
   );
