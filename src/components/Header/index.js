@@ -1,18 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import Nav from "../Nav";
 
-function Header() {
-    const [categories] = useState(["about", "portfolio", "contact", "resume"]);
-    const [currentCategory, setCurrentCategory] = useState(categories[0]);
+function Header(props) {
+    const { currentTab, setCurrentTab } = props;
 
     return (
         <header>
-            <h2>Michael Atwood</h2>
-            <Nav>
-                categories={categories}
-                setCurrentCategory={setCurrentCategory}
-                currentCategory={currentCategory}
-            </Nav>
+            <div>
+                <h2>Michael Atwood</h2>
+            </div>
+            <div>
+                <Nav>
+                    currentTab={currentTab}
+                    setCurrentTab={setCurrentTab}
+                </Nav>
+            </div>
         </header>
     );
 }
