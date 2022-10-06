@@ -11,8 +11,7 @@ Mod 20 challenge, creating a portfolio using `React.js`, consisting 6 projects, 
 
 ## Demo
 ![React App](https://user-images.githubusercontent.com/103971335/190879010-767ef4ad-b6c9-497c-ba17-77f224a35a03.gif)
-* [![React][React.js]][React-url]
-
+(https://protected-hamlet-99225.herokuapp.com/)[https://protected-hamlet-99225.herokuapp.com/]
 ## Installation
 To install, use `git clone <reponame>` in your terminal, `npm init` to install the dependencies.
 
